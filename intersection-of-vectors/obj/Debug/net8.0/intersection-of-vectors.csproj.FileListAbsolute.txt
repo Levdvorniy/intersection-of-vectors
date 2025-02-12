@@ -1,0 +1,14 @@
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\bin\Debug\net8.0\intersection-of-vectors.exe
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\bin\Debug\net8.0\intersection-of-vectors.deps.json
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\bin\Debug\net8.0\intersection-of-vectors.runtimeconfig.json
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\bin\Debug\net8.0\intersection-of-vectors.dll
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\bin\Debug\net8.0\intersection-of-vectors.pdb
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\Debug\net8.0\intersection-of-vectors.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\Debug\net8.0\intersection-of-vectors.AssemblyInfoInputs.cache
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\Debug\net8.0\intersection-of-vectors.AssemblyInfo.cs
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\Debug\net8.0\intersection-of-vectors.csproj.CoreCompileInputs.cache
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\Debug\net8.0\intersection-of-vectors.dll
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\Debug\net8.0\refint\intersection-of-vectors.dll
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\Debug\net8.0\intersection-of-vectors.pdb
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\Debug\net8.0\intersection-of-vectors.genruntimeconfig.cache
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\Debug\net8.0\ref\intersection-of-vectors.dll
