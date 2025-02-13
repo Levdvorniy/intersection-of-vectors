@@ -5,15 +5,20 @@ namespace Intersection3D
 
 	public class SegmentComparison
 	{
-
-		// This method determines the intersection point(if it exists and is the only one) of two segments of the Segment3D type
-		// through representation of segments in the form of parametric equations:
-		// L1: P = p + t*d1, t in [0,1]
-		// L2: Q = q + s *d2, s in [0,1]
-		// Input parameters: Segment3D seg1, seg2 -- two segments,
-		// double EPS -- error for comparing numbers of the double type
-		// Output data: a point of the Vector3D type is the intersection point of two specified segments, if the segments intersect,
-		// Null -- otherwise
+		/// <summary>
+		/// This method determines the intersection point(if it exists and is the only one) of two segments of the Segment3D type
+		/// through representation of segments in the form of parametric equations:
+		/// L1: P = p + t*d1, t in [0,1]
+		/// L2: Q = q + s *d2, s in [0,1]
+		/// Input parameters: Segment3D seg1, seg2 -- two segments,
+		/// double EPS -- error for comparing numbers of the double type
+		/// Output data: a point of the Vector3D type is the intersection point of two specified segments, if the segments intersect,
+		/// Null -- otherwise
+		/// </summary>
+		/// <param name="seg1"></param>
+		/// <param name="seg2"></param>
+		/// <param name="EPS"></param>
+		/// <returns></returns>
 		public static Vector3D? Intersect(Segment3D seg1, Segment3D seg2, double EPS)
 		{
 
