@@ -30,20 +30,6 @@ namespace Intersection3D
 			return new Vector3D(a.X * s, a.Y * s, a.Z * s);
 		}
 
-		public double GetScalarMultiplication(Vector3D other)
-		{
-			return X * other.X + Y * other.Y + Z * other.Z;
-		}
-
-		public Vector3D GetVectorMultiplication(Vector3D other)
-		{
-			return new Vector3D(
-				Y * other.Z - Z * other.Y,
-				Z * other.X - X * other.Z,
-				X * other.Y - Y * other.X
-			);
-		}
-
 		public double GetLengthOfVector()
 		{
 			return Math.Sqrt(X * X + Y * Y + Z * Z);

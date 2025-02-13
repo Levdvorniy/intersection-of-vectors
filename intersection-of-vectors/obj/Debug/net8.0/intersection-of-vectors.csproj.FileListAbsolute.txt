@@ -12,3 +12,4 @@ C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\De
 C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\Debug\net8.0\intersection-of-vectors.pdb
 C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\Debug\net8.0\intersection-of-vectors.genruntimeconfig.cache
 C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\Debug\net8.0\ref\intersection-of-vectors.dll
+C:\Users\Lev\source\repos\intersection-of-vectors\intersection-of-vectors\obj\Debug\net8.0\intersection-of-vectors.sourcelink.json

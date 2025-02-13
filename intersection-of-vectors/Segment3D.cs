@@ -13,6 +13,11 @@ namespace Intersection3D
 			End = end;
 		}
 
+		public double GetLengthOfSegment()
+		{
+			return End.DistanceTo(Start);
+		}
+
 		public override string ToString()
 		{
 			return $"Segment3D({Start} -> {End})";

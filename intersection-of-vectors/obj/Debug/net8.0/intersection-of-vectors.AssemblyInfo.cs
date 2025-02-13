@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("intersection-of-vectors")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d773259dd5ea57a226b4f7614357b3350fe8da7")]
 [assembly: System.Reflection.AssemblyProductAttribute("intersection-of-vectors")]
 [assembly: System.Reflection.AssemblyTitleAttribute("intersection-of-vectors")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
