@@ -1,17 +1,19 @@
+using Microsoft.VisualBasic;
+
 namespace Intersection3D
 {
 
 	public class SegmentComparison
 	{
 
-		// Данный метод определяет точку пересечения (если она существует и единственна) двух отрезков типа Segment3D через
-		// представление отрезков в виде параметрических уравнений:
+		// This method determines the intersection point(if it exists and is the only one) of two segments of the Segment3D type
+		// through representation of segments in the form of parametric equations:
 		// L1: P = p + t*d1, t in [0,1]
-		// L2: Q = q + s*d2, s in [0,1]
-		// Входные параметры: Segment3D seg1, seg2 -- два отрезка, 
-		// double EPS -- погрешность для сравнения чисел типа double
-		// Выходные данные: точка типа Vector3D -- точка пересечения двух заданных отрезков, если отрезки пересекаются,
-		// Null -- иначе
+		// L2: Q = q + s *d2, s in [0,1]
+		// Input parameters: Segment3D seg1, seg2 -- two segments,
+		// double EPS -- error for comparing numbers of the double type
+		// Output data: a point of the Vector3D type is the intersection point of two specified segments, if the segments intersect,
+		// Null -- otherwise
 		public static Vector3D? Intersect(Segment3D seg1, Segment3D seg2, double EPS)
 		{
 
@@ -25,14 +27,14 @@ namespace Intersection3D
 
 			if (crossLengthSquared < EPS)
 			{
-				// Если cross почти нулевой – отрезки параллельны
+				// If the cross is almost zero, the segments are parallel
 				if (MatematicalOperationOnVectorsAndSegments.GetVectorMultiplication(q - p, d1).GetLengthOfVector() < EPS)
 				{
 
 					double d1LengthSquared = MatematicalOperationOnVectorsAndSegments.GetScalarMultiplication(d1, d1);
 					if (d1LengthSquared < EPS)
 					{
-						// seg1 – вырожденный отрезок (точка)
+						// seg1 is a degenerate segment (point)
 						if (p.DistanceTo(q) < EPS)
 							return p;
 						else
@@ -49,11 +51,11 @@ namespace Intersection3D
 						t1 = temp;
 					}
 
-					// Если интервалы [t0, t1] и [0,1] не пересекаются – нет пересечения
+					// If the intervals [t0, t1] and [0,1] do not intersect, there is no intersection
 					if (t1 < 0 || t0 > 1)
 						return null;
 
-					// Если пересечение сведено к одной точке
+					// If the intersection is reduced to a single point
 					double tStart = Math.Max(t0, 0);
 					double tEnd = Math.Min(t1, 1);
 					if (Math.Abs(tStart - tEnd) < EPS)
@@ -61,19 +63,19 @@ namespace Intersection3D
 						return p + d1 * tStart;
 					}
 
-					// Пересечение представляет собой отрезок – неоднозначно
+					// The intersection is a segment – ambiguous
 					return null;
 				}
 				else
 				{
-					// Параллельны, но не коллинеарны – пересечения нет
+					// They are parallel, but not collinear – there is no intersection.
 					return null;
 				}
 			}
 			else
 			{
-				// Линии не параллельны. Попытаемся найти параметры t и s,
-				// для которых выполняется p + t*d1 = q + s*d2.
+				// The segments are not parallel. Let's try to find the parameters t and s,
+				// for which p + t*d1 = q + s*d2 holds.
 				Vector3D r = q - p;
 				
 				double t = MatematicalOperationOnVectorsAndSegments.GetScalarMultiplication(
@@ -82,15 +84,15 @@ namespace Intersection3D
 				double s = MatematicalOperationOnVectorsAndSegments.GetScalarMultiplication(
 				MatematicalOperationOnVectorsAndSegments.GetVectorMultiplication(r, d1), cross) / crossLengthSquared;
 
-				// Вычисляем точки на обеих прямых по найденным параметрам
+				// We calculate the points on both segments based on the found parameters
 				Vector3D pointOnL1 = p + d1 * t;
 				Vector3D pointOnL2 = q + d2 * s;
 
-				// Если расстояние между точками слишком велико – линии скошие (не пересекаются)
+				// If the distance between the points is too large, the segments are skew (don't intersect)
 				if (pointOnL1.DistanceTo(pointOnL2) > EPS)
 					return null;
 
-				// Проверяем, лежат ли найденные параметры в пределах [0,1] – то есть на отрезках
+				// We check whether the found parameters lie within [0,1] – that is on the segments
 				if (t < -EPS || t > 1 + EPS || s < -EPS || s > 1 + EPS)
 					return null;
 
